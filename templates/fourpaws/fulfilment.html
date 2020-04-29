@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% extends 'fourpaws/base.html' %}
+{% block body_block %}
+
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<form method="POST" enctype="multipart/form-data">
+			{% csrf_token %}
+			{{ form_letter }}
+			<input type="submit" name="upload_letter">
+		</form>
+		{% if letter_uploaded %}
+		<h2>Your letter has been uploaded succesfully</h2>
+		{% endif %}
+	</div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<form method="POST" enctype="multipart/form-data">
+			{% csrf_token %}
+			{{ form_input }}
+			<input type="submit" name="upload_csv">
+		</form>
+		{% if csv_uploaded %}
+		<h2>{{ row_count }} records have been imported</h2>
+		{% endif %}
+	</div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<form method="GET" enctype="multipart/form-data">
+			{% csrf_token %}
+			{{ form_output }}
+			<input type="submit" name="download_letter">
+		</form>	
+	</div>
+</div>
+
+{% if tobe_thanked %}
+	{% for letter in letters_list %}
+		<a href="{{ letter.file_path.url }}">{{ letter.file_name }}</a>
+	{%  endfor %}
+{% endif %}
+
+{% endblock %}
+

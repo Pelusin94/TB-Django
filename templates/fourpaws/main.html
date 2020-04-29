@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% extends 'fourpaws/base.html' %}
+{% block body_block %}
+{% load static %}
+
+
+<div class="card" style="width: 18rem;">
+	<img src="{% static 'fourpaws/images/excel-word.jpg' %}" class="card-img-top" alt="image not available">
+	<div class="card-body">
+		<h5 class="card-title">Fulfilment Files</h5>
+		<p class="card-text">Upload letter templates, client data and download ready-to-print letters</p>
+		<a href="{% url 'fulfilment_page' %}" class="btn btn-primary">Go!</a>
+	</div>
+</div>
+
+
+
+
+{% endblock %}
