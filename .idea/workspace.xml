@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c9e04a4-e0f4-4ec7-9266-328856952a60" name="Default Changelist" comment="" />
+    <list default="true" id="9c9e04a4-e0f4-4ec7-9266-328856952a60" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/telebank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/telebank.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourpaws/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/fourpaws/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourpaws/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourpaws/migrations/0002_auto_20200421_1116.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourpaws/migrations/0003_fulfilmentddview.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourpaws/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fourpaws/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourpaws/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fourpaws/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourpaws/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fourpaws/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourpaws/views_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/telebank/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/telebank/settings.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +27,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yvr3PaKJILocioKfehQcZSX7Ar" />
   <component name="ProjectViewState">
@@ -36,6 +53,18 @@
       <recent name="C:\Users\Gregory\Dropbox\Project-Work\telebank-3.0\media\fourpaws\fulfilment" />
       <recent name="C:\Users\Gregory Vasquez\Desktop\Project\telebank-2.0\templates\fourpaws" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python.forms">
     <configuration name="forms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -87,18 +116,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -111,6 +128,19 @@
       <updated>1583833708466</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="2619" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587640301483">

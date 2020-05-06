@@ -2,7 +2,8 @@ from django.db import models
 
 from django.db import models
 
-class FulfilmentDD(models.Model):
+
+class FulfilmentDD_table(models.Model):
     import_file_id = models.CharField(max_length=50, null=True)
     import_date = models.DateField(null=True)
     charity_urn = models.IntegerField(null=True)
@@ -40,18 +41,20 @@ class FulfilmentDD(models.Model):
     def __str__(self):
         return self.forename
 
-class DateRange(models.Model):
+
+class DateRange_table(models.Model):
     merge_date = models.DateField()
     start_date = models.DateField()
     end_date = models.DateField()
 
-class UploadedFiles(models.Model):
+
+class UploadedFiles_table(models.Model):
     file_name = models.CharField(max_length=50)
     file_path = models.FileField(upload_to='fourpaws/letters')
     upload_date = models.DateField(auto_now_add=True, blank=True, null=True)
 
 
-class FulfilmentDdView(models.Model):
+class FulfilmentddView(models.Model):
     id = models.IntegerField(primary_key=True)
     import_file_id = models.CharField(max_length=50, blank=True, null=True)
     import_date = models.DateField(blank=True, null=True)
@@ -89,4 +92,7 @@ class FulfilmentDdView(models.Model):
 
     class Meta:
         managed = False  # Created from a view. Don't remove.
-        db_table = 'fulfilment_dd_view'
+        db_table = 'fulfilmentdd_view'
+
+
+

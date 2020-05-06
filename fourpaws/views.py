@@ -7,18 +7,18 @@ from . import forms
 from django import http
 
 
-def main_view(request):
+def main_response(request):
     template = 'fourpaws/main.html'
     context={}
     return render(request, template, context)
 
-def fulfilment_view(request):
+def fulfilment_response(request):
     template = 'fourpaws/fulfilment.html'
     FulfilmentOutputForm = forms.FulfilmentOutputForm()
     FulfilmentInputForm = forms.FulfilmentInputForm()
     FulfilmentLettersUploadForm = forms.FulfilmentLettersUploadForm()
     FulfilmentLetterSelectForm = forms.FulfilmentLetterSelectForm()
-    letters_list = models.UploadedFiles.objects.all()
+    letters_list = models.UploadedFiles_table.objects.all()
     tobe_thanked = False
     csv_uploaded = False
     letter_uploaded = False
@@ -40,7 +40,7 @@ def fulfilment_view(request):
             FulfilmentOutputForm = forms.FulfilmentOutputForm(request.GET)
 
             if FulfilmentOutputForm.is_valid():
-                model = models.DateRange.objects.all()
+                model = models.DateRange_table.objects.all()
                 start_date = FulfilmentOutputForm.cleaned_data['date_from']
                 end_date = FulfilmentOutputForm.cleaned_data['date_to']
                 model.delete()
@@ -49,13 +49,13 @@ def fulfilment_view(request):
                     start_date=start_date,
                     end_date=end_date,
                 )
-                tobe_thanked = models.FulfilmentDdView.objects.all()
+                tobe_thanked = models.FulfilmentddView.objects.all()
 
     elif request.method == 'POST':
         if 'upload_csv' in request.POST:
             FulfilmentInputForm = forms.FulfilmentInputForm(request.POST, request.FILES)
             if FulfilmentInputForm.is_valid():
-                model = models.FulfilmentDD.objects.all()
+                model = models.FulfilmentDD_table.objects.all()
                 csv_file = FulfilmentInputForm.cleaned_data['csv_file']
                 data = csv_file.read().decode('UTF-8').splitlines()
                 dic_data = csv.DictReader(data)

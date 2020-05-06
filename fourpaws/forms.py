@@ -12,12 +12,12 @@ class FulfilmentOutputForm(forms.Form):
 
 class FulfilmentLettersUploadForm(forms.ModelForm):
     class Meta:
-        model = models.UploadedFiles
+        model = models.UploadedFiles_table
         fields = ('file_name', 'file_path')
 
 class FulfilmentLetterSelectForm(forms.Form):
-    model = models.UploadedFiles.objects.all()
-    letter_choices = [ (letter.file_path ,letter.file_name) for letter in model]
+    model = models.UploadedFiles_table.objects.all()
+    letter_choices = [(letter.file_path, letter.file_name) for letter in model]
     letter = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple, choices=letter_choices)
 
 

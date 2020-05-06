@@ -79,7 +79,7 @@ DATABASE_HOSTS={
     'work': 'STATIONBOSS\\LOCALTB',
 }
 
-DATABASE_ON = DATABASE_HOSTS['work']
+DATABASE_ON = DATABASE_HOSTS['home']
 
 DATABASE_ROUTERS = ['fourpaws.routers.FourPawsRouter']
 DATABASES = {
