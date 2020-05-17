@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c9e04a4-e0f4-4ec7-9266-328856952a60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/telebank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/telebank.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fourpaws/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/fourpaws/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fourpaws/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fourpaws/migrations/0002_auto_20200421_1116.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fourpaws/migrations/0003_fulfilmentddview.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourpaws/migrations/0002_fulfilmentddview.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fourpaws/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fourpaws/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fourpaws/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fourpaws/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fourpaws/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fourpaws/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fourpaws/views_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/telebank/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/telebank/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fourpaws/letters/60MWUN2021PH.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fourpaws/letters/60MWUN2021PH_3qKabT1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fourpaws/letters/ALL_APPEALS_2.mdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fourpaws/letters/ALL_APPEALS_4.mdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fourpaws/letters/New_DDs_17.04.2020.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fourpaws/letters/New_DDs_17.04.2020.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fourpaws/letters/New_DDs_17.04.2020.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fourpaws/letters/New_DDs_17.04.2020_Bs1ZGSf.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/fourpaws/letters/New_DDs_17.04.2020_Byjrrco.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fourpaws/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fourpaws/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fourpaws/fulfilment.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fourpaws/fulfilment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fourpaws/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fourpaws/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

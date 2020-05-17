@@ -2,6 +2,8 @@ from django.db import models
 
 from django.db import models
 
+# Tables------------------------------------------------------------------------------------------
+
 
 class FulfilmentDD_table(models.Model):
     import_file_id = models.CharField(max_length=50, null=True)
@@ -48,10 +50,19 @@ class DateRange_table(models.Model):
     end_date = models.DateField()
 
 
-class UploadedFiles_table(models.Model):
-    file_name = models.CharField(max_length=50)
-    file_path = models.FileField(upload_to='fourpaws/letters')
+class UploadedWordFiles_table(models.Model):
+    file_description = models.CharField(max_length=50)
+    file_path = models.FileField(upload_to='fourpaws/word_files')
     upload_date = models.DateField(auto_now_add=True, blank=True, null=True)
+
+
+class UploadedCsvFiles_table(models.Model):
+    file_description = models.CharField(max_length=50)
+    file_path = models.FileField(upload_to='fourpaws/csv_files')
+    upload_date = models.DateField(auto_now_add=True, blank=True, null=True)
+
+
+# Views ---------------------------------------------------------------------------------------
 
 
 class FulfilmentddView(models.Model):

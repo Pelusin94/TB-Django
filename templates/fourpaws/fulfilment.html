@@ -4,9 +4,10 @@
 
 <div class="jumbotron jumbotron-fluid">
 	<div class="container">
+		<h3>Import Word document</h3>
 		<form method="POST" enctype="multipart/form-data">
 			{% csrf_token %}
-			{{ form_letter }}
+			{{ word_form }}
 			<input type="submit" name="upload_letter">
 		</form>
 		{% if letter_uploaded %}
@@ -17,9 +18,10 @@
 
 <div class="jumbotron jumbotron-fluid">
 	<div class="container">
+		<h3>Import CSV document</h3>
 		<form method="POST" enctype="multipart/form-data">
 			{% csrf_token %}
-			{{ form_input }}
+			{{ csv_form }}
 			<input type="submit" name="upload_csv">
 		</form>
 		{% if csv_uploaded %}
@@ -29,6 +31,7 @@
 </div>
 <div class="jumbotron jumbotron-fluid">
 	<div class="container">
+		<h3>Download Letters</h3>
 		<form method="GET" enctype="multipart/form-data">
 			{% csrf_token %}
 			{{ form_output }}
@@ -42,6 +45,7 @@
 		<a href="{{ letter.file_path.url }}">{{ letter.file_name }}</a>
 	{%  endfor %}
 {% endif %}
+
 
 {% endblock %}
 
